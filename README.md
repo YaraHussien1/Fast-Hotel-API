@@ -73,19 +73,19 @@
    
      - FastHotel API does the following :
      
-      1- Gets the customer current location from the DataBase.
+      1- Gets the customer's current location from the DataBase.
         
       2- Send the customer's current location to the Taxi service.
          
-      3- Parallel Search " FastHotel API and Taxi service : 
+      3- Parallel Search " FastHotel API and Taxi service"  : 
          
        #### A- FastHotel searches for hotels that are close to the customer's current location.
           
         - Uses Places API and searches by raduis.
                
-        - Uses Google Maps API to calculate the shortest hotel path " The closest hotel to the customer location".
-        - Loop : 
-               * If the result of searching by the raduis was null "no hotels within this raduis", then increase the raduis and                           search again until you find at least one hotel.
+        - Uses Google Maps API to calculate the shortest hotel path " The closest hotel to the customer location" .
+        - Loop :
+                -  If the result of searching by the raduis was null "no hotels within this raduis" , then increase the raduis and                           search again until you find at least one hotel.
               
        #### B- Taxi Service Searches for the path "Direction" to the customer in order to pick Him/Her up.
        

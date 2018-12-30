@@ -1,6 +1,28 @@
 # FastHotel API
-FastHotel aims to make the customer able to find the closest hotel to its location. It also orders a taxi to give him a ride to the hotel, and it takes care of the payment process with all its details.
-This API provides cheap, fast, and reliable services, which will help the customers to save their time and to give them the best path to the hotel without the need to even know the area or its roads.
+
+# Motivation
+* The problem domain is the transportation of customers to the closest (nearby ) hotel.
+The specific SOA solution was to make the customer able to find the closest hotel to his location. It also orders a taxi to give him a ride to the hotel, and it takes care of the payment process with all its details.
+
+* Why use service computing?
+  -Less cost.
+  -Availability.
+  -Better maintenance.
+  -Reusability.
+  
+*Why use composition?
+  -We use composition because provides services for new software applications or Api´s.
+  
+*Why did you choose these third parties?
+ -Easy to use.
+ -More documentation.
+ -Free keys.
+ -Stable and secure.
+
+
+
+
+
 # SOA Diagram
 
 ![websoa _diagram 2](https://user-images.githubusercontent.com/37571215/50399502-9b106380-0788-11e9-9b06-b0f369fb2bea.png)

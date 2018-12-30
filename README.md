@@ -66,7 +66,9 @@
   ## BPMN 2.0 Diagram
 
    ![fffff](https://user-images.githubusercontent.com/44376115/50550208-2d76a280-0c74-11e9-8981-f5ac940d2a96.png)
-
+   
+  ## Details
+   
 
 # Implementation Details
   We developed our service using the RESTful service development paradigm, which is based on the HTTP protocol that is an RPC- based       sychronous communication protocol.

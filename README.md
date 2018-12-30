@@ -1,6 +1,6 @@
 # FastHotel API
 
-  ## Motivation
+ ## Motivation
     * The problem domain is the transportation of customers to the closest (nearby ) hotel.
       The specific SOA solution was to make the customer able to find the closest hotel to his location. It also orders a taxi to give         him a ride to the hotel, and it takes care of the payment process with all its details.
 
@@ -23,7 +23,7 @@
 
   ## SOA Diagram
 
-    ![websoa _diagram 2](https://user-images.githubusercontent.com/37571215/50399502-9b106380-0788-11e9-9b06-b0f369fb2bea.png)
+   ![websoa _diagram 2](https://user-images.githubusercontent.com/37571215/50399502-9b106380-0788-11e9-9b06-b0f369fb2bea.png)
 
       * Users can use FastHotel(FH) API functionalities provided by Web service APIs
       * User sends a request(with his current location ) to FastHotel API.
@@ -35,7 +35,7 @@
 
   ## BPMN 2.0 Diagram
 
-    ![bpmn 2 0_diagramf 1](https://user-images.githubusercontent.com/44376115/50547892-ec6a9800-0c4b-11e9-99a9-b4c16ac84b44.png)
+   ![bpmn 2 0_diagramf 1](https://user-images.githubusercontent.com/44376115/50547892-ec6a9800-0c4b-11e9-99a9-b4c16ac84b44.png)
 
 
 # Implementation Details

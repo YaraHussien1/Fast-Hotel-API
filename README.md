@@ -25,12 +25,13 @@
 
    ![websoa _diagram 2](https://user-images.githubusercontent.com/37571215/50399502-9b106380-0788-11e9-9b06-b0f369fb2bea.png)
 
-   * Users can use FastHotel(FH) API functionalities provided by Web service API in the following order:
-    1-  User sends a request(with his current location ) to FastHotel API.
-    2-  FastHotel API gets the current location of the cusomer and finds the path (Direction) to the customer.
-    4-  FastHotel API finds the closest hotel path (direction) to the customer, and sends the (customer location,  hotel path) to a             taxi.
-    5-  The taxi picks up the customer, give him a drive to the hotel.
-    6-  FastHotel API takes care of the financial work using PayPal.
+ * Users can use FastHotel(FH) API functionalities provided by Web service API in the following order:
+ 
+   1-  User sends a request(with his current location ) to FastHotel API.
+   2-  FastHotel API gets the current location of the cusomer and finds the path (Direction) to the customer.
+   4-  FastHotel API finds the closest hotel path (direction) to the customer, and sends the (customer location,  hotel path) to a             taxi.
+   5-  The taxi picks up the customer, give him a drive to the hotel.
+   6-  FastHotel API takes care of the financial work using PayPal.
 
 
 

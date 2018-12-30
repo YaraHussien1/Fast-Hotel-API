@@ -47,7 +47,8 @@
     - PayPal Controller.
   * Third Party : 
     - Geolocation Map
- ## Users can use FastHotel(FH) API functionalities provided by Web service API in the following order:
+    
+ ## Users can use FastHotel API functionalities provided by Web services API in the following order:
  
    1-  User sends a request(with his current location ) to FastHotel API.
    

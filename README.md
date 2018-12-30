@@ -1,4 +1,4 @@
-### FastHotel API
+# FastHotel API
 
 ## Motivation
 * The problem domain is the transportation of customers to the closest (nearby ) hotel.
@@ -21,9 +21,9 @@ The specific SOA solution was to make the customer able to find the closest hote
 
 
 
-## Service Design
+# Service Design
 
-# SOA Diagram
+## SOA Diagram
 
 ![websoa _diagram 2](https://user-images.githubusercontent.com/37571215/50399502-9b106380-0788-11e9-9b06-b0f369fb2bea.png)
 
@@ -35,7 +35,7 @@ The specific SOA solution was to make the customer able to find the closest hote
 
 
 
-# BPMN 2.0 Diagram
+##BPMN 2.0 Diagram
 
 ![bpmn 2 0_diagramf 1](https://user-images.githubusercontent.com/44376115/50547892-ec6a9800-0c4b-11e9-99a9-b4c16ac84b44.png)
 
@@ -45,7 +45,7 @@ We developed our service using the RESTful service development paradigm, which i
 
 #  Composite Service Algorithm According To BPMN 2.0
 
-# FastHotelControllerApi
+## FastHotelControllerApi
 
 
 Method | HTTP request | Description
@@ -56,7 +56,7 @@ Method | HTTP request | Description
 [**getCustomersUsingGET1**](FastHotelControllerApi.md#getCustomersUsingGET1) | **GET** /composite | customers
 [**getDirectioForHotelUsingGET**](FastHotelControllerApi.md#getDirectioForHotelUsingGET) | **GET** /composite/Customer-direction | Get Customer by Location
 
-# CustomerControllerApi
+## CustomerControllerApi
 
 
 
@@ -69,7 +69,7 @@ Method | HTTP request | Description
 [**getCustomersUsingGET**](CustomerControllerApi.md#getCustomersUsingGET) | **GET** /customer | customers
 
 
-# CustomerModelClass
+## CustomerModelClass
 
 ## Properties
 Name | Type | Description | Notes
@@ -78,7 +78,7 @@ Name | Type | Description | Notes
 **customerName** | **String** | yara | 
 **location** | **String** | loc | 
 
-# TaxiControllerApi
+## TaxiControllerApi
 
 
 

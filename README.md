@@ -68,6 +68,8 @@
    ![fffff](https://user-images.githubusercontent.com/44376115/50550208-2d76a280-0c74-11e9-8981-f5ac940d2a96.png)
    
   ## Details
+  ### Start : 
+   * A cutomer needs to find a close hotel.
    
 
 # Implementation Details

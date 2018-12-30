@@ -10,10 +10,10 @@ The specific SOA solution was to make the customer able to find the closest hote
   -Better maintenance.
   -Reusability.
   
-*Why use composition?
+* Why use composition?
   -We use composition because provides services for new software applications or Api´s.
   
-*Why did you choose these third parties?
+* Why did you choose these third parties?
  -Easy to use.
  -More documentation.
  -Free keys.

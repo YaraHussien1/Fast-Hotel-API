@@ -13,7 +13,7 @@
  * Why use composition?
       - We use composition because provides services for new software applications or Api´s.
   
- * Why did you choose these third parties?
+ * Why these third parties?
     - Easy to use.
     - More documentation.
     - Free keys.
@@ -47,7 +47,7 @@
     - PayPal Controller.
   * Third Party : 
     - Geolocation Map
- * Users can use FastHotel(FH) API functionalities provided by Web service API in the following order:
+ ## Users can use FastHotel(FH) API functionalities provided by Web service API in the following order:
  
    1-  User sends a request(with his current location ) to FastHotel API.
    

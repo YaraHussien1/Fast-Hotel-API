@@ -7,7 +7,8 @@ This API provides cheap, fast, and reliable services, which will help the custom
 
 # BPMN 2.0 Diagram
 
-![bpmn 2 0_diagramf 1](https://user-images.githubusercontent.com/37571215/50422829-bba6ef00-0856-11e9-8de6-70d974f5c303.jpeg)
+![bpmn 2 0_diagramf 1](https://user-images.githubusercontent.com/44376115/50547892-ec6a9800-0c4b-11e9-99a9-b4c16ac84b44.png)
+
 
 # Implementation Details
 We developed our service using the RESTful service development paradigm, which is based on the HTTP protocol that is an RPC- based sychronous communication protocol.

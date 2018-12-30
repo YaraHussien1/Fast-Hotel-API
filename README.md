@@ -25,7 +25,7 @@
 
    ![websoa _diagram 2](https://user-images.githubusercontent.com/37571215/50399502-9b106380-0788-11e9-9b06-b0f369fb2bea.png)
 
- * Users can use FastHotel(FH) API functionalities provided by Web service API in the following order:
+   * Users can use FastHotel(FH) API functionalities provided by Web service API in the following order:
  
   1-  User sends a request(with his current location ) to FastHotel API.
   2-  FastHotel API gets the current location of the cusomer and finds the path (Direction) to the customer.

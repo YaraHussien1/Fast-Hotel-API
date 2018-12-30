@@ -43,7 +43,7 @@ The specific SOA solution was to make the customer able to find the closest hote
 # Implementation Details
 We developed our service using the RESTful service development paradigm, which is based on the HTTP protocol that is an RPC- based sychronous communication protocol.
 
-#  Composite Service Algorithm According To BPMN 2.0
+# Composite Service Algorithm According To BPMN 2.0
 
 ## FastHotelControllerApi
 

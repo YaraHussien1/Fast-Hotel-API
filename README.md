@@ -5,19 +5,19 @@
       The specific SOA solution was to make the customer able to find the closest hotel to his location. It also orders a taxi to give         him a ride to the hotel, and it takes care of the payment process with all its details.
 
  * Why use service computing?
-    -Less cost.
-    -Availability.
-    -Better maintenance.
-    -Reusability.
+    - Less cost.
+    - Availability.
+    - Better maintenance.
+    - Reusability.
   
  * Why use composition?
-      -We use composition because provides services for new software applications or Api´s.
+      - We use composition because provides services for new software applications or Api´s.
   
  * Why did you choose these third parties?
-    -Easy to use.
-    -More documentation.
-    -Free keys.
-    -Stable and secure.
+    - Easy to use.
+    - More documentation.
+    - Free keys.
+    - Stable and secure.
 
 # Service Design
 
@@ -26,6 +26,16 @@
    ![websoa _diagram 2](https://user-images.githubusercontent.com/37571215/50399502-9b106380-0788-11e9-9b06-b0f369fb2bea.png)
    
 # Details
+
+ ## 3_Tire Client Server Architecture :
+  * Client :
+    - The User (Customer).
+    
+  * Services :
+    - Direction (Hotel / Customer).
+    - place (Customer).
+    - Payment.
+  
  
  ## Services : 
   * Composite : 
@@ -36,7 +46,7 @@
     - Taxi Controller.
     - PayPal Controller.
   * Third Party : 
-    
+    - Geolocation Map
  * Users can use FastHotel(FH) API functionalities provided by Web service API in the following order:
  
    1-  User sends a request(with his current location ) to FastHotel API.

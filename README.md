@@ -29,7 +29,7 @@
 
  ## 3_Tire Client Server Architecture :
   * Client :
-    - The User (Customer).
+    - Advanced REST Client.
     
   * Services :
     - Direction (Hotel / Customer).

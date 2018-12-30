@@ -1,4 +1,4 @@
-# FastHotel API
+### FastHotel API
 
 ## Motivation
 * The problem domain is the transportation of customers to the closest (nearby ) hotel.

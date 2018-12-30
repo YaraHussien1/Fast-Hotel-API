@@ -1,51 +1,49 @@
 # FastHotel API
 
-## Motivation
-* The problem domain is the transportation of customers to the closest (nearby ) hotel.
-The specific SOA solution was to make the customer able to find the closest hotel to his location. It also orders a taxi to give him a ride to the hotel, and it takes care of the payment process with all its details.
+  ## Motivation
+    * The problem domain is the transportation of customers to the closest (nearby ) hotel.
+      The specific SOA solution was to make the customer able to find the closest hotel to his location. It also orders a taxi to give         him a ride to the hotel, and it takes care of the payment process with all its details.
 
-* Why use service computing?
-  -Less cost.
-  -Availability.
-  -Better maintenance.
-  -Reusability.
+  * Why use service computing?
+    -Less cost.
+    -Availability.
+    -Better maintenance.
+    -Reusability.
   
-* Why use composition?
-  -We use composition because provides services for new software applications or Api´s.
+  * Why use composition?
+      -We use composition because provides services for new software applications or Api´s.
   
-* Why did you choose these third parties?
- -Easy to use.
- -More documentation.
- -Free keys.
- -Stable and secure.
-
-
+  * Why did you choose these third parties?
+    -Easy to use.
+    -More documentation.
+    -Free keys.
+    -Stable and secure.
 
 # Service Design
 
-## SOA Diagram
+  ## SOA Diagram
 
-![websoa _diagram 2](https://user-images.githubusercontent.com/37571215/50399502-9b106380-0788-11e9-9b06-b0f369fb2bea.png)
+    ![websoa _diagram 2](https://user-images.githubusercontent.com/37571215/50399502-9b106380-0788-11e9-9b06-b0f369fb2bea.png)
 
-  * Users can use FastHotel(FH) API functionalities provided by Web service APIs
-  * User sends a request(with his current location ) to FastHotel API.
-  *FastHotel API finds the closest hotel (direction) to the customer, and sends the (customer location,  hotel path) to a taxi.
-  * The taxi picks up the customer, give him a drive to the hotel.
-  * FH API takes care of the financial work using PayPal.
+      * Users can use FastHotel(FH) API functionalities provided by Web service APIs
+      * User sends a request(with his current location ) to FastHotel API.
+      * FastHotel API finds the closest hotel (direction) to the customer, and sends the (customer location,  hotel path) to a taxi.
+      * The taxi picks up the customer, give him a drive to the hotel.
+      * FastHotel API takes care of the financial work using PayPal.
 
 
 
-##BPMN 2.0 Diagram
+  ## BPMN 2.0 Diagram
 
-![bpmn 2 0_diagramf 1](https://user-images.githubusercontent.com/44376115/50547892-ec6a9800-0c4b-11e9-99a9-b4c16ac84b44.png)
+    ![bpmn 2 0_diagramf 1](https://user-images.githubusercontent.com/44376115/50547892-ec6a9800-0c4b-11e9-99a9-b4c16ac84b44.png)
 
 
 # Implementation Details
-We developed our service using the RESTful service development paradigm, which is based on the HTTP protocol that is an RPC- based sychronous communication protocol.
+  We developed our service using the RESTful service development paradigm, which is based on the HTTP protocol that is an RPC- based       sychronous communication protocol.
 
 # Composite Service Algorithm According To BPMN 2.0
 
-## FastHotelControllerApi
+  ## FastHotelControllerApi
 
 
 Method | HTTP request | Description
@@ -56,9 +54,7 @@ Method | HTTP request | Description
 [**getCustomersUsingGET1**](FastHotelControllerApi.md#getCustomersUsingGET1) | **GET** /composite | customers
 [**getDirectioForHotelUsingGET**](FastHotelControllerApi.md#getDirectioForHotelUsingGET) | **GET** /composite/Customer-direction | Get Customer by Location
 
-## CustomerControllerApi
-
-
+  ## CustomerControllerApi
 
 
 Method | HTTP request | Description
@@ -69,16 +65,16 @@ Method | HTTP request | Description
 [**getCustomersUsingGET**](CustomerControllerApi.md#getCustomersUsingGET) | **GET** /customer | customers
 
 
-## CustomerModelClass
+  ## CustomerModelClass
 
-## Properties
+   ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **customerID** | **Integer** | 100 | 
 **customerName** | **String** | yara | 
 **location** | **String** | loc | 
 
-## TaxiControllerApi
+ ## TaxiControllerApi
 
 
 

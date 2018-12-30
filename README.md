@@ -1,6 +1,6 @@
 # FastHotel API
 
-# Motivation
+## Motivation
 * The problem domain is the transportation of customers to the closest (nearby ) hotel.
 The specific SOA solution was to make the customer able to find the closest hotel to his location. It also orders a taxi to give him a ride to the hotel, and it takes care of the payment process with all its details.
 

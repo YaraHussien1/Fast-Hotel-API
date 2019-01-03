@@ -107,9 +107,77 @@
   We developed our service using the RESTful service development paradigm, which is based on the HTTP protocol that is an RPC- based       sychronous communication protocol.
 
 # Composite Service Algorithm According To BPMN 2.0
+ ## FastHotel Composite
+ 
+     '''java @RestController
+	    @RequestMapping("/composite")
+	    public class FastHotelController
+	 {
+		
+	ArrayList<Customer> customers = new ArrayList<Customer>();	
+	//To Get The Closest Hotel Path To The customer
+	@ApiOperation(value = "Get Customer by Location", response = Customer.class)
+	@RequestMapping(method = RequestMethod.GET, value = "/Customer-direction")
+	public String getDirectioForHotel(@RequestParam(value = "id", defaultValue ="0") int id,
+			@RequestParam(value = "name", defaultValue = "yara") String name,
+			@RequestParam(value = "location", defaultValue ="31.922428,35.208054") String location) 
+	{
+		Customer c = new Customer(id, name, location);
+		// get the nearBy Hotel "The closest one
+		//System.out.println("GETDierc Method returns : " +getDirection(c));
+		return getDirection(c);
+	}
 
-## Applied Technologies
+	// Get Customer By Name
+	@RequestMapping(method = RequestMethod.GET, value = "/customer")
+	String findCustomerByName(@RequestParam(value = "name", defaultValue = "Yara") String name)
+	{
 
+		for (Customer i : customers)
+		{
+			if (i.getCustomerName().equals(name))
+				return name + " exists";
+		}
+		return name + " does not exist!";
+	}
+	
+	// Add A New Customer
+	@RequestMapping(value = "/customer", method = RequestMethod.POST)
+	HttpEntity<Customer> addCustomer(@RequestBody Customer u)
+	{	System.out.println("POST METHOD IS Called");
+
+		for (Customer i : customers)
+		{
+			if (u.getCustomerID() == i.getCustomerID())
+				throw new UserAlreadyExistsException();
+		}	
+		customers.add(u);	
+		return new ResponseEntity<>(u, HttpStatus.OK);
+	}
+
+	@ExceptionMapping(errorCode = "user.already_exists", statusCode = HttpStatus.BAD_REQUEST)
+	public class UserAlreadyExistsException extends RuntimeException 
+	{	
+	}
+	// Get nearby hotels ad get the location of the closest one to the customers location
+	public static String getDirection (Customer c)
+	{
+		ArrayList<Hotel> hotels;
+		int i =100;
+		do
+		{
+			hotels = Places.getNearByHotel(c.getLocation(), i);
+			i+=100;
+		}while (hotels.size()<=0);
+		//System.out.println("GETDirection method returns this : "+Maps.Direction(c.getLocation(), hotels.get(0).getName()));
+			return Maps.Direction(c.getLocation(), hotels.get(0).getLocation());
+	}
+	}'''
+ 
+ 
+ 
+  ## Applied Technologies
+  
   * Development Environment : STS , Eclipse.
   
   * Programming Languages : (JDK) java development kit 8.
@@ -125,5 +193,13 @@
   * ##   Log File
   
     *  [   **Our Log File**  ](Team11LogFile.csv)
+   
+  # Conclusion and Discussion
+  - The main idea of our API is to give the customer the closest hotel location, direction and to order a taxi to drive him to the           destination.
+   - One of the problems was the lack of time, if we had more time we would produce a better work for sure.
+   - some technical difficulties came across too, like trying to connect to the local host which eventually became successful, and             deploying the project to Google app engine made a lot of unexpected errors, which took a lot of time from us to try to solve them.
+   - If we had more time I’m sure we will manage to launch a well structured and very helpful API.
+   
+
    
 

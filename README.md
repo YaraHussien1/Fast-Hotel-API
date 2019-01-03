@@ -124,6 +124,6 @@
   
   * ##   Log File
   
-   [   **Our Log File**  ](Team11LogFile.csv)
+    *  [   **Our Log File**  ](Team11LogFile.csv)
    
 
